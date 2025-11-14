@@ -16,6 +16,7 @@ int main() {
     // Get OCR result
     char *outText = api->GetUTF8Text();
     printf("OCR Output:\n%s", outText);
+    std::cout << "OCR Result:\n" << outText << std::endl;
 
     // Clean up
     api->End();
